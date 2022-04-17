@@ -1,0 +1,21 @@
+{
+  "name": "memorycard",
+  "version": "1.0.0",
+  "description": "Just a simple implementation of the Memory Card Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "memory",
+    "card",
+    "game"
+  ],
+  "author": "Raul Mendez Vasquez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
