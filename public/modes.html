@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Roboto+Slab:wght@300;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Card Game</title>
+</head>
+
+<body>
+    <section>
+        <h1 class="megatitle">Memory Card Game</h1>
+        <span>It's time to have Fun...</span>
+    </section>
+    <section id="main" class="rowWise">
+        <div id="solo" onclick="addSingleUser">
+            <img src="https://icon-library.com/images/sandclock-icon/sandclock-icon-21.jpg" alt="Against the clock"
+                height="120px;">
+            <p>Solo against the clock</p>
+            <form action="/add-user" id="addUserForm" class="not-visible">
+                <input type="text" id="userName" name="userName">
+                <input type="submit" value="ok">
+            </form>
+        </div>
+        <div id="multiplayer" onclick="addMultipleUser">
+            <img src="http://cdn.onlinewebfonts.com/svg/img_351582.png" alt="Multiplayer" height="120px;">
+            <p>Multiplayer</p>
+        </div>
+    </section>
+    <section>
+        <h2>Choose your level</h2>
+        <div class="rowWise">
+            <div id="kids" onclick="addMultipleUser">
+                <img src="kids.png" alt="kids level" height="120px;">
+                <p>Kids</p>
+            </div>
+            <div id="adults" onclick="addMultipleUser">
+                <img src="adults.png" alt="adults lelvel" height="120px;">
+                <p>Adults</p>
+            </div>
+            <div id="megamind" onclick="addMultipleUser">
+                <img src="megamind.png" alt="Megamind level" height="120px;">
+                <p>Megamind</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="staticStuff.js"></script>
+    <script src="dymanicStuff.js"></script>
+</body>
+
+</html>

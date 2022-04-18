@@ -8,6 +8,10 @@ app.get("/", (request, response) => {
     response.send(index.html);
 });
 
+app.get("/modes", (request, response) => {
+    response.send(modes.html);
+});
+
 app.listen(3000, () => console.log('Static server listening on the port 3000'));
 
 
@@ -23,7 +27,7 @@ mongo.connect(url, (err, client) => {
     console.log('successfuly connected to the server db');
     const db = client.db(dbName);
     const collection = db.collection('games');
-    
+
     collection.insertOne({ mode: 'solo', name: 'User1'}, ((error, item) => {
         if(error) {
          console.error(error)

@@ -79,14 +79,14 @@ h1.megatitle {
     border-color: white;
 }
  
-#main {
+.rowWise {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#main p {
+.rowWise p {
     color: var(--olive-drab-7);
     margin-top: .5rem;
 }
@@ -97,4 +97,39 @@ h1.megatitle {
 
 .visible {
     display: block;
+}
+
+.card-canvas {
+    background-color: white;
+    border-radius: 10px;
+    height: 340px;
+    width: 250px;
+    border: 1px var(--olive-drab-7) solid;
+    -webkit-box-shadow: 2px 2px 3px 0px #000000;
+    box-shadow: 2px 2px 3px 0px #000000;
+}
+
+.card_faceDown {
+    text-align: center;
+    background-color: var(--cyber-yellow);
+    
+    height: 300px;
+    width: 210px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+#main .card_faceDown p {
+    font-size: 1.2rem;
+    line-height: 1;
+    
+}
+
+.card_faceup {
+    background-image: none;
+    height: 300px;
+    width: 210px;
+    margin: auto;
+    margin-top: 20px;
 }
