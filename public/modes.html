@@ -20,14 +20,14 @@
         <h1 class="megatitle">Memory Card Game</h1>
         <span>It's time to have Fun...</span>
     </section>
-    <section id="main" class="rowWise">
+    <section id="main" class="rowWise container">
         <div id="solo" onclick="addSingleUser">
             <img src="https://icon-library.com/images/sandclock-icon/sandclock-icon-21.jpg" alt="Against the clock"
                 height="120px;">
             <p>Solo against the clock</p>
-            <form action="/add-user" id="addUserForm" class="not-visible">
+            <form action="" id="addUserForm" class="not-visible">
                 <input type="text" id="userName" name="userName">
-                <input type="submit" value="ok">
+                <input type="submit" value="ok" id="addUserNamebtn"  onclick="showLevels">
             </form>
         </div>
         <div id="multiplayer" onclick="addMultipleUser">
@@ -35,20 +35,26 @@
             <p>Multiplayer</p>
         </div>
     </section>
-    <section>
-        <h2>Choose your level</h2>
+    <section id="levelsSection" class="not-visible container">
+        <h2 id="levelTitle">Choose your level</h2>
         <div class="rowWise">
             <div id="kids" onclick="addMultipleUser">
-                <img src="kids.png" alt="kids level" height="120px;">
-                <p>Kids</p>
+                <a href="gamepad.html">
+                    <img src="kids.png" alt="kids level" height="120px;">
+                    <p>Kids</p>
+                </a>
             </div>
             <div id="adults" onclick="addMultipleUser">
-                <img src="adults.png" alt="adults lelvel" height="120px;">
-                <p>Adults</p>
+                <a href="gamepad.html">
+                    <img src="adults.png" alt="adults lelvel" height="120px;">
+                    <p>Adults</p>
+                </a>
             </div>
             <div id="megamind" onclick="addMultipleUser">
-                <img src="megamind.png" alt="Megamind level" height="120px;">
-                <p>Megamind</p>
+                <a href="gamepad.html">
+                    <img src="megamind.png" alt="Megamind level" height="120px;">
+                    <p>Megamind</p>
+                </a>
             </div>
         </div>
     </section>
